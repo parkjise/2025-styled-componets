@@ -7,6 +7,7 @@ function ComplexTitle({ title }) {
 			<h1>{title}</h1>
 			<div className="underline"></div>
 			<h2 className="title">Random</h2>
+			<div className="box"></div>
 		</Wrapper>
 	);
 }
@@ -24,6 +25,10 @@ const Wrapper = styled.div`
 	}
 	.title {
 		color: blue;
+	}
+	.box {
+		height: 10px;
+		border: var(--mainBorder);
 	}
 `;
 export default ComplexTitle;
