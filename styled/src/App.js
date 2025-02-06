@@ -5,6 +5,7 @@ import styled from "styled-components";
 import ComplexTitle from "./components/ComplexTitle";
 import AlternativeTitle from "./components/AlternativeTitle";
 import Random from "./components/Random";
+import Card from "./components/Card";
 const StyledBtn = styled(Button)`
 	text-transform: capitalize;
 `;
@@ -32,6 +33,7 @@ function App() {
 			<div style={{ padding: "2rem" }}>
 				<AlternativeTitle title="alternative title"></AlternativeTitle>
 			</div>
+			<Card></Card>
 		</>
 	);
 }
