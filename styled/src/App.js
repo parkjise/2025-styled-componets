@@ -1,5 +1,5 @@
 import BasicTitle from "./components/BasicTitle";
-import { DefaultButton, HipsterButton } from "./components/Buttons";
+import NewBtn, { DefaultButton, HipsterButton } from "./components/Buttons";
 import Button from "@mui/material/Button";
 import styled from "styled-components";
 import ComplexTitle from "./components/ComplexTitle";
@@ -25,6 +25,11 @@ function App() {
 				<StyledBtn color="secondary" variant="outlined">
 					Hello World
 				</StyledBtn>
+			</div>
+			<div style={{ padding: "2rem" }}>
+				<NewBtn title="New Btn"></NewBtn>
+				<NewBtn color="primary" title="New Btn"></NewBtn>
+				<NewBtn color="secondary" title="Sub Btn"></NewBtn>
 			</div>
 			<div style={{ padding: "2rem" }}>
 				<ComplexTitle title="more complex title"></ComplexTitle>

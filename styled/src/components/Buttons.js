@@ -1,4 +1,21 @@
+import React from "react";
 import styled from "styled-components";
+
+const NewBtn = ({ title, color }) => {
+	return <BtnNew className={color}>{title}</BtnNew>;
+};
+
+const BtnNew = styled.button`
+	background-color: yellow;
+	&.primary {
+		background-color: #000;
+		color: #fff;
+	}
+	&.secondary {
+		background-color: red;
+		color: #fff;
+	}
+`;
 
 export const DefaultButton = styled.button`
 	background: var(--primary);
@@ -19,3 +36,5 @@ export const HipsterButton = styled(DefaultButton)`
 	color: var(--primary);
 	border: 1px solid var(--primary);
 `;
+
+export default NewBtn;
