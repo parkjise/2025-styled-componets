@@ -31,10 +31,16 @@ export const DefaultButton = styled.button`
 `;
 
 export const HipsterButton = styled(DefaultButton)`
-	width: 400px;
+	width: 150px;
 	background: transparent;
 	color: var(--primary);
 	border: 1px solid var(--primary);
+	padding: 1rem;
+	display: inline-block;
+	margin-right: 1rem;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1rem;
 `;
 
 export default NewBtn;
