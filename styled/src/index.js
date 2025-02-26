@@ -1,12 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
-import Card from "./Card";
+import GlobalStyles from "./global-styles";
+// import App from "./App";
+// import Card from "./Card";
+import Forms from "./Forms";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<Card />
+		<GlobalStyles />
+		{/* <Card /> */}
+		<Forms />
 	</React.StrictMode>
 );
