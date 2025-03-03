@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Button = styled.button.attrs((props) => {
 	return {
@@ -11,6 +11,31 @@ const Button = styled.button.attrs((props) => {
 	color: #fff;
 	padding: 0.25rem;
 	cursor: pointer;
+	${({ type }) => {
+		return (
+			type === "submit" &&
+			css`
+				display: block;
+				width: 100%;
+				margin-top: 1rem;
+				border-radius: 0.25rem;
+			`
+		);
+	}}
+`;
+
+const BasicInput = styled.input.attrs((props) => {
+	return {
+		type: props.type || "text,",
+		placeholder: props.placeholder || "Please enter value",
+	};
+})`
+	box-sizing: border-box;
+	padding: 0.5rem;
+	border: 2px solid #f2f4f8;
+	border-radius: 0.25rem;
+	width: 100%;
+	margin-top: 1rem;
 `;
 const Form = () => {
 	return (
@@ -26,7 +51,10 @@ const Form = () => {
 				`}
 			>
 				<h2>Form</h2>
-				<input type="text" />
+				<BasicInput />
+				<BasicInput />
+				<BasicInput type="email" placeholder="enter email" />
+				<BasicInput type="submit" />
 				<Button type="submit">submit here</Button>
 			</form>
 		</div>
