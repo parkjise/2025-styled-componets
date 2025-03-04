@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import List from "./List";
 
 const Button = styled.button.attrs((props) => {
 	return {
@@ -56,6 +57,7 @@ const Form = () => {
 				<BasicInput type="email" placeholder="enter email" />
 				<BasicInput type="submit" />
 				<Button type="submit">submit here</Button>
+				<List />
 			</form>
 		</div>
 	);
